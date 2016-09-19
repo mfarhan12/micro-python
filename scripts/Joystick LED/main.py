@@ -7,7 +7,7 @@ y_pin = pyb.ADC(1)
 while True:
     x_val = x_pin.read()
     y_val = y_pin.read()
-    print ((x_val, y_val))
+
     if x_val > 3500:
         pyb.LED(1).on()
         pyb.LED(2).off()
